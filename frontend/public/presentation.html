@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Project Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .presentation {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .slide {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .slide-title {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .slide-subtitle {
+            font-size: 1.5rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            font-size: 1.3rem;
+            color: #444;
+        }
+
+        .content h2 {
+            color: #667eea;
+            margin: 30px 0 15px 0;
+            font-size: 2rem;
+        }
+
+        .content h3 {
+            color: #764ba2;
+            margin: 20px 0 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .content ul, .content ol {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .content li {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .feature-card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .tech-stack {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .tech-item {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .slide-number {
+            text-align: center;
+            color: #999;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        .emoji {
+            font-size: 4rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                padding: 30px 20px;
+            }
+
+            .slide-title {
+                font-size: 2rem;
+            }
+
+            .content {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Title -->
+        <div class="slide">
+            <div class="emoji">🤖</div>
+            <h1 class="slide-title">AI-Powered Chatbot</h1>
+            <p class="slide-subtitle">Database-Connected Intelligent Assistant</p>
+            <div class="highlight" style="text-align: center;">
+                <h3>Kisi bhi website pe lagao aur apne database se directly answers pao!</h3>
+                <p style="margin-top: 15px; font-size: 1.2rem;">Powered by Groq AI • Built with React & Node.js</p>
+            </div>
+            <div class="slide-number">Slide 1 / 10</div>
+        </div>
+
+        <!-- Slide 2: Project Overview -->
+        <div class="slide">
+            <h1 class="slide-title">Project Overview</h1>
+            <div class="content">
+                <h2>🎯 Project Ka Maqsad</h2>
+                <p>Ek aisa intelligent chatbot banana jo:</p>
+                <ul>
+                    <li><strong>Kisi bhi website</strong> pe aasani se lag sake</li>
+                    <li><strong>MySQL database</strong> se directly connect ho kar answers de</li>
+                    <li><strong>Files (PDF, Word, Excel)</strong> upload kar ke un par questions puch sakein</li>
+                    <li><strong>Natural language</strong> mein samajh ke jawab de</li>
+                    <li><strong>Multi-language support</strong> - 7 languages mein kaam kare</li>
+                </ul>
+
+                <div class="highlight">
+                    <h3>💡 Key Innovation</h3>
+                    <p>Is chatbot ko kisi bhi existing website mein sirf <strong>2 lines of code</strong> se add kar sakte ho!</p>
+                </div>
+            </div>
+            <div class="slide-number">Slide 2 / 10</div>
+        </div>
+
+        <!-- Slide 3: Features -->
+        <div class="slide">
+            <h1 class="slide-title">Main Features</h1>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">🤖</div>
+                    <h4>AI-Powered</h4>
+                    <p>Groq AI (Llama 3.3 70B) se powered intelligent responses</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">💾</div>
+                    <h4>Database Connected</h4>
+                    <p>MySQL se direct connection aur real-time data</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📄</div>
+                    <h4>File Upload</h4>
+                    <p>PDF, Word, Excel files analyze kar ke answers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎤</div>
+                    <h4>Voice Support</h4>
+                    <p>Speech-to-text aur text-to-speech functionality</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🌍</div>
+                    <h4>Multi-Language</h4>
+                    <p>7 languages: English, Urdu, Arabic, Spanish, etc.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎨</div>
+                    <h4>Customizable</h4>
+                    <p>Colors, themes, bot name, avatar - sab customize</p>
+                </div>
+            </div>
+            <div class="slide-number">Slide 3 / 10</div>
+        </div>
+
+        <!-- Slide 4: Advanced Features -->
+        <div class="slide">
+            <h1 class="slide-title">Advanced Features</h1>
+            <div class="content">
+                <h2>🚀 Premium Functionality</h2>
+                <ol>
+                    <li><strong>Conversation Memory:</strong> Pichli baatein yaad rakhta hai aur context maintain karta hai</li>
+                    <li><strong>RAG (Retrieval Augmented Generation):</strong> Vector embeddings se accurate answers</li>
+                    <li><strong>Source Citations:</strong> Har answer ke saath source dikhata hai</li>
+                    <li><strong>Response Tone Selector:</strong> Simple, Balanced, Detailed, ya Professional tone choose karein</li>
+                    <li><strong>Search in Conversation:</strong> Purani messages mein search kar sakte ho</li>
+                    <li><strong>Pin Messages:</strong> Important messages ko pin kar sakte ho</li>
+                    <li><strong>Export Chat:</strong> Puri conversation download kar sakte ho</li>
+                    <li><strong>Feedback System:</strong> Good/Bad feedback de sakte ho har answer pe</li>
+                    <li><strong>Dark/Light Theme:</strong> Dono themes available</li>
+                    <li><strong>Mobile Responsive:</strong> Har device pe perfectly kaam karta hai</li>
+                </ol>
+            </div>
+            <div class="slide-number">Slide 4 / 10</div>
+        </div>
+
+        <!-- Slide 5: Tech Stack -->
+        <div class="slide">
+            <h1 class="slide-title">Technology Stack</h1>
+            <div class="content">
+                <h2>🛠️ Technologies Used</h2>
+                
+                <h3>Frontend:</h3>
+                <div class="tech-stack">
+                    <span class="tech-item">React.js</span>
+                    <span class="tech-item">Vite</span>
+                    <span class="tech-item">TailwindCSS</span>
+                    <span class="tech-item">Lucide Icons</span>
+                    <span class="tech-item">Web Speech API</span>
+                </div>
+
+                <h3>Backend:</h3>
+                <div class="tech-stack">
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">Express.js</span>
+                    <span class="tech-item">MySQL</span>
+                    <span class="tech-item">Multer</span>
+                    <span class="tech-item">PDF-Parse</span>
+                    <span class="tech-item">Mammoth (Word)</span>
+                </div>
+
+                <h3>AI & ML:</h3>
+                <div class="tech-stack">
+                    <span class="tech-item">Groq API</span>
+                    <span class="tech-item">Llama 3.3 70B</span>
+                    <span class="tech-item">Vector Embeddings</span>
+                    <span class="tech-item">Cosine Similarity</span>
+                    <span class="tech-item">RAG Pipeline</span>
+                </div>
+            </div>
+            <div class="slide-number">Slide 5 / 10</div>
+        </div>
+
+        <!-- Slide 6: Architecture -->
+        <div class="slide">
+            <h1 class="slide-title">System Architecture</h1>
+            <div class="content">
+                <h2>🏗️ Kaise Kaam Karta Hai</h2>
+                
+                <div class="highlight">
+                    <h3>Step 1: User Question</h3>
+                    <p>User chatbot mein question puchta hai</p>
+                </div>
+
+                <div class="highlight" style="background: linear-gradient(135deg, #764ba2, #667eea);">
+                    <h3>Step 2: Database Search</h3>
+                    <p>System database ya uploaded files mein relevant information dhundta hai using vector similarity</p>
+                </div>
+
+                <div class="highlight">
+                    <h3>Step 3: AI Processing</h3>
+                    <p>Groq AI ko context diya jata hai aur intelligent answer generate hota hai</p>
+                </div>
+
+                <div class="highlight" style="background: linear-gradient(135deg, #764ba2, #667eea);">
+                    <h3>Step 4: Response with Sources</h3>
+                    <p>User ko answer milta hai sources ke saath</p>
+                </div>
+
+                <p style="margin-top: 30px; font-size: 1.2rem; text-align: center;"><strong>Total Response Time: 1-2 seconds</strong> ⚡</p>
+            </div>
+            <div class="slide-number">Slide 6 / 10</div>
+        </div>
+
+        <!-- Slide 7: Integration -->
+        <div class="slide">
+            <h1 class="slide-title">Kisi Bhi Website Pe Kaise Lagaen</h1>
+            <div class="content">
+                <h2>🔌 Integration Process</h2>
+                
+                <h3>Step 1: Embed Code Copy Karein</h3>
+                <div class="tech-stack">
+                    <code style="display: block; background: #1a1a2e; color: #0eff0e; padding: 20px; border-radius: 10px; font-family: monospace; white-space: pre-wrap;">
+&lt;script src="http://your-domain.com/chatbot-embed.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  ChatbotWidget.init({
+    apiUrl: 'http://your-backend.com/api',
+    databaseId: 'your-db-id',
+    theme: 'dark',
+    position: 'right'
+  });
+&lt;/script&gt;
+                    </code>
+                </div>
+
+                <h3>Step 2: Apni Website Ke &lt;/body&gt; Tag Se Pehle Paste Karein</h3>
+                <p>Bas itna! Aapki website pe chatbot appear ho jayega 🎉</p>
+
+                <h3>Step 3: Customize Karein (Optional)</h3>
+                <ul>
+                    <li>Bot ka naam change karein</li>
+                    <li>Colors aur theme customize karein</li>
+                    <li>Position (left/right) set karein</li>
+                    <li>Avatar change karein</li>
+                </ul>
+            </div>
+            <div class="slide-number">Slide 7 / 10</div>
+        </div>
+
+        <!-- Slide 8: Database Connection -->
+        <div class="slide">
+            <h1 class="slide-title">Database Connection</h1>
+            <div class="content">
+                <h2>💾 MySQL Database Kaise Connect Karein</h2>
+                
+                <div class="highlight">
+                    <h3>Method 1: API Through Code</h3>
+                    <code style="display: block; background: #1a1a2e; color: #0eff0e; padding: 15px; border-radius: 10px; font-family: monospace; font-size: 0.9rem; white-space: pre-wrap;">
+fetch('http://localhost:3000/api/database/connect', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    host: 'localhost',
+    user: 'root',
+    password: 'your_password',
+    database: 'your_database'
+  })
+});
+                    </code>
+                </div>
+
+                <h3>Method 2: Admin Panel (Future Feature)</h3>
+                <p>GUI interface se database credentials daal sakte ho</p>
+
+                <h3>Features:</h3>
+                <ul>
+                    <li>✅ Multiple databases ko support karta hai</li>
+                    <li>✅ Automatic table structure detection</li>
+                    <li>✅ Real-time data fetching</li>
+                    <li>✅ Secure connection handling</li>
+                </ul>
+            </div>
+            <div class="slide-number">Slide 8 / 10</div>
+        </div>
+
+        <!-- Slide 9: Use Cases -->
+        <div class="slide">
+            <h1 class="slide-title">Use Cases & Applications</h1>
+            <div class="content">
+                <h2>💼 Yeh Chatbot Kahan Use Ho Sakta Hai</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="icon">🏪</div>
+                        <h4>E-commerce</h4>
+                        <p>Product database se instant answers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏥</div>
+                        <h4>Healthcare</h4>
+                        <p>Patient records aur appointments</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🎓</div>
+                        <h4>Education</h4>
+                        <p>Course content aur student queries</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">💼</div>
+                        <h4>Corporate</h4>
+                        <p>HR policies aur company info</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏨</div>
+                        <h4>Hospitality</h4>
+                        <p>Booking aur services info</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🛠️</div>
+                        <h4>Support</h4>
+                        <p>Customer support automation</p>
+                    </div>
+                </div>
+
+                <div class="highlight" style="margin-top: 30px;">
+                    <h3>🎯 Best For:</h3>
+                    <p>Websites with large databases, documentation, or knowledge bases jo chahte hain automated customer support with intelligent answers!</p>
+                </div>
+            </div>
+            <div class="slide-number">Slide 9 / 10</div>
+        </div>
+
+        <!-- Slide 10: Conclusion -->
+        <div class="slide">
+            <h1 class="slide-title">Project Summary</h1>
+            <div class="content">
+                <h2>✨ Key Highlights</h2>
+                
+                <div class="highlight">
+                    <h3>🎯 What We Built:</h3>
+                    <ul style="margin-left: 0; list-style: none;">
+                        <li>✅ Complete AI chatbot with database integration</li>
+                        <li>✅ 18+ advanced features</li>
+                        <li>✅ Mobile responsive design</li>
+                        <li>✅ Production-ready code</li>
+                        <li>✅ Easy integration (2 lines of code)</li>
+                    </ul>
+                </div>
+
+                <h3>📊 Technical Achievements:</h3>
+                <ul>
+                    <li><strong>RAG Pipeline:</strong> Vector similarity search for accurate answers</li>
+                    <li><strong>Multi-modal Input:</strong> Text, voice, and file upload</li>
+                    <li><strong>Real-time Processing:</strong> Fast response times</li>
+                    <li><strong>Scalable Architecture:</strong> Multiple databases support</li>
+                </ul>
+
+                <h3>🚀 Future Enhancements:</h3>
+                <ul>
+                    <li>GPT-4 Vision integration for image analysis</li>
+                    <li>Admin dashboard for management</li>
+                    <li>Analytics and insights</li>
+                    <li>Multi-user support with authentication</li>
+                </ul>
+
+                <div class="emoji">🎉</div>
+                <p style="text-align: center; font-size: 1.5rem; font-weight: bold; color: #667eea;">
+                    Project Complete & Production Ready!
+                </p>
+            </div>
+            <div class="slide-number">Slide 10 / 10</div>
+        </div>
+
+        <!-- Thank You Slide -->
+        <div class="slide">
+            <div class="emoji">🙏</div>
+            <h1 class="slide-title">Thank You!</h1>
+            <div class="content" style="text-align: center;">
+                <h2>Questions?</h2>
+                <p style="font-size: 1.3rem; margin: 30px 0;">
+                    Is chatbot ko live dekhne ke liye:<br>
+                    <strong style="color: #667eea;">http://localhost:5173</strong>
+                </p>
+                
+                <div class="highlight">
+                    <h3>📧 Contact</h3>
+                    <p>GitHub: github.com/your-repo</p>
+                    <p>Demo: your-demo-link.com</p>
+                </div>
+
+                <p style="margin-top: 40px; font-size: 1.2rem; color: #666;">
+                    Made by ABDUL MALIK
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
